@@ -4,7 +4,7 @@
   "description": "A simple group chat project",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index"
+    "start": "node index"
   },
   "author": "Robert Magomero",
   "license": "ISC",
