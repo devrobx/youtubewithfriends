@@ -11,7 +11,7 @@
 .home {
     width: 100%;
     min-height: 100vh;
-    background-image: url('../img/friends.jpg');
+    background-image: url('../img/space.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,7 +34,7 @@ form{
     text-align: center;
     text-transform: uppercase;
     padding-top: 80px;
-    color: black;
+    color: white;
     font-size: 3rem;
 }
 
@@ -57,7 +57,7 @@ form{
 }
 
 .dash-container {
-    background-color: lightblue;
+    background: url('../img/space.jpg');
     width: 100%;
     min-height: 100vh;
    
@@ -65,16 +65,39 @@ form{
 
 .dash-container .row {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 120px;
+    flex-wrap: wrap;
+}
+
+.dash-container h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+ .row #game {
+    width: 650px;
+    height: 580px;
+ 
+}
+
+.row #game canvas {
+   background: url('../img/game.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .chat #messages {
-    width: 380px;
+    width: 350px;
     height: 450px;
-    background-color: white;
+    background-color: darkslategray;
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -135,12 +158,14 @@ form{
     margin-top: 20px;
 }
 .dash-container .chat form input {
-    width: 330px;
-    height: 2.5rem;
+    width: 300px;
+    height: 3rem;
     padding-left: 4px;
     border: none;
     border-radius: 4px;
     margin-top: 5px;
+    background-color: darkslategray;
+    overflow-y: scroll;
    
 }
 
@@ -153,12 +178,3 @@ form{
     background-color: green;
 }
 
-#search {
-    width: 15rem;
-    height: 2.5rem;
-    border: none;
-    border-radius: 2rem;
-    border-width: 2px;
-    padding-left: 10px;
-    margin: 20px 0 30px 0;
-}
