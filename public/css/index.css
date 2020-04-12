@@ -92,6 +92,12 @@ form{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 580px;
+    width: 650px;
+}
+
+.row #game canvas h3 , h5 , button {
+    text-align: center;
 }
 
 .chat #messages {

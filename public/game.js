@@ -1,12 +1,12 @@
-const game = document.getElementById('game');
+const canvas = document.getElementById('gameCanvas');
+
 
 
 window.onload = function () {
-    canvas = document.createElement('canvas')
     canvas.width = 650
     canvas.height = 580
 
-    game.appendChild(canvas)
+    // game.appendChild(canvas)
 
     //Draw Elements
     pen = canvas.getContext('2d')
@@ -15,8 +15,12 @@ window.onload = function () {
     document.addEventListener('mousemove', onMouseMove, false)
     document.addEventListener('mousedown', onMouseClick, false)
 
+    const title = document.createElement('h3');
+    title.innerText = "Welcome to Space Shooter";
+    canvas.appendChild(title);
+
     fighter = new this.Image();
-    figter.src = '/figher.jpg'
+    fighter.src = '/figher.jpg'
 
     bullet - new this.Image()
     bullet.src = '/bullet.jpg'
@@ -68,4 +72,11 @@ function update() {
         pDim, pDim);
   }
 
+}
+
+function onMouseMove(){
+  console.log('mouse move function')
+}
+function onMouseClick(){
+  console.log('mouse click function')
 }
